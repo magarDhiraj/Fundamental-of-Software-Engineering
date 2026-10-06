@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course cards built with HTML and CSS for a practical assignment.">
+    <title>LearnHub | HTML & CSS Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home">LearnHub</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">LEARN • PRACTICE • BUILD</p>
+                <h1>Build useful skills with practical courses.</h1>
+                <p class="hero-text">
+                    Explore beginner-friendly courses in web development, programming,
+                    databases, networking and software engineering.
+                </p>
+                <a class="primary-button" href="#courses">Explore Courses</a>
+            </div>
+        </section>
+
+        <section class="intro-section" id="about">
+            <div>
+                <p class="section-label">ABOUT THE PLATFORM</p>
+                <h2>Simple learning, practical results.</h2>
+            </div>
+            <p class="intro-text">
+                LearnHub is a sample educational website created for an HTML and CSS practical
+                assignment. The layout uses semantic HTML, Flexbox, CSS Grid, hover effects and
+                responsive design.
+            </p>
+        </section>
+
+        <section class="courses-section" id="courses">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">FEATURED COURSES</p>
+                    <h2>Choose a course to start learning</h2>
+                </div>
+                <span class="course-count">6 Courses</span>
+            </div>
+
+            <div class="card-grid">
+                <article class="course-card">
+                    <img src="images/web-development.svg" alt="Laptop showing web development code">
+                    <div class="card-content">
+                        <span class="tag">Web Development</span>
+                        <h3>HTML & CSS Basics</h3>
+                        <p>Learn webpage structure, styling, spacing, layouts and responsive design.</p>
+                        <div class="card-meta">
+                            <span>Beginner</span>
+                            <span>6 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/python.svg" alt="Code editor with programming code">
+                    <div class="card-content">
+                        <span class="tag">Programming</span>
+                        <h3>Python Programming</h3>
+                        <p>Practice variables, conditions, loops, functions and small programming projects.</p>
+                        <div class="card-meta">
+                            <span>Beginner</span>
+                            <span>8 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/database.svg" alt="Database server and technology illustration">
+                    <div class="card-content">
+                        <span class="tag">Database</span>
+                        <h3>MySQL & DBMS</h3>
+                        <p>Understand tables, keys, relationships, SQL queries and basic database design.</p>
+                        <div class="card-meta">
+                            <span>Intermediate</span>
+                            <span>7 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/networking.svg" alt="Network server equipment with blue lights">
+                    <div class="card-content">
+                        <span class="tag">Networking</span>
+                        <h3>Computer Networking</h3>
+                        <p>Study IP addressing, network devices, protocols and practical network concepts.</p>
+                        <div class="card-meta">
+                            <span>Intermediate</span>
+                            <span>7 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/software-engineering.svg" alt="Student using a laptop for software development">
+                    <div class="card-content">
+                        <span class="tag">Software</span>
+                        <h3>Software Engineering</h3>
+                        <p>Explore software processes, requirements, design, testing and project planning.</p>
+                        <div class="card-meta">
+                            <span>Beginner</span>
+                            <span>6 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <img src="images/java.svg" alt="Computer screen with code">
+                    <div class="card-content">
+                        <span class="tag">Development</span>
+                        <h3>Java Fundamentals</h3>
+                        <p>Build a strong foundation in Java syntax, OOP concepts and problem solving.</p>
+                        <div class="card-meta">
+                            <span>Beginner</span>
+                            <span>8 Weeks</span>
+                        </div>
+                        <a class="card-button" href="#contact">View Course</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="resources-section" id="resources">
+            <div class="resource-box">
+                <div>
+                    <p class="section-label">LEARNING RESOURCES</p>
+                    <h2>Keep practising after class.</h2>
+                </div>
+                <p>
+                    Use your lecture notes, university materials and reliable web documentation to
+                    understand the HTML and CSS concepts used in this project.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div>
+            <h2>LearnHub</h2>
+            <p>HTML & CSS Practical Assignment</p>
+        </div>
+        <p>Created for educational purposes.</p>
+    </footer>
+</body>
+</html>

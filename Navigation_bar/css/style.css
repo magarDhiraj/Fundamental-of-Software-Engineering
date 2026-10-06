@@ -1,0 +1,402 @@
+/* =========================
+   Basic reset and defaults
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #182230;
+    background: #f5f7fb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* =========================
+   Navigation bar
+   ========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+    width: min(1120px, 92%);
+    margin: 0 auto;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.brand {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4b5563;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    background: #eef2ff;
+    color: #4338ca;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   Hero section
+   ========================= */
+
+.hero {
+    width: min(1120px, 92%);
+    margin: 34px auto 0;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    padding: 64px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #312e81, #4f46e5 55%, #7c3aed);
+    color: #ffffff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.eyebrow,
+.section-label {
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.eyebrow {
+    margin-bottom: 14px;
+    color: #c7d2fe;
+}
+
+.hero h1 {
+    max-width: 680px;
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+}
+
+.hero-text {
+    max-width: 620px;
+    margin: 22px 0 30px;
+    color: #e0e7ff;
+    font-size: 1.05rem;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #312e81;
+    font-weight: 800;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Intro section
+   ========================= */
+
+.intro-section,
+.courses-section,
+.resources-section {
+    width: min(1120px, 92%);
+    margin: 80px auto 0;
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: end;
+}
+
+.section-label {
+    color: #6366f1;
+    margin-bottom: 10px;
+}
+
+.intro-section h2,
+.section-heading h2,
+.resource-box h2 {
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+}
+
+.intro-text {
+    color: #5b6472;
+    font-size: 1.03rem;
+}
+
+/* =========================
+   Card section
+   ========================= */
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.course-count {
+    padding: 8px 12px;
+    border: 1px solid #dbe0ea;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #4b5563;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.course-card {
+    overflow: hidden;
+    border: 1px solid #e2e6ef;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
+}
+
+.course-card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    min-height: 286px;
+}
+
+.tag {
+    align-self: flex-start;
+    margin-bottom: 12px;
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.course-card h3 {
+    margin-bottom: 9px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.course-card p {
+    color: #697386;
+    font-size: 0.94rem;
+}
+
+.card-meta {
+    display: flex;
+    gap: 14px;
+    margin-top: auto;
+    padding: 18px 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.card-button {
+    display: inline-block;
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 10px;
+    background: #111827;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.card-button:hover,
+.card-button:focus-visible {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   Resources section
+   ========================= */
+
+.resource-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 34px;
+    border-radius: 20px;
+    background: #e9eafe;
+}
+
+.resource-box > p {
+    align-self: end;
+    color: #4b5563;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer {
+    width: min(1120px, 92%);
+    margin: 80px auto 0;
+    padding: 28px 0 42px;
+    border-top: 1px solid #dfe3eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: #667085;
+}
+
+.site-footer h2 {
+    color: #182230;
+    font-size: 1.1rem;
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   Responsive design
+   Desktop: 3 cards
+   Tablet: 2 cards
+   Mobile: 1 card
+   ========================= */
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 48px;
+    }
+
+    .intro-section,
+    .resource-box {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 440px;
+        padding: 34px 26px;
+        border-radius: 18px;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links a {
+        padding: 8px 10px;
+        font-size: 0.86rem;
+    }
+
+    .intro-section,
+    .courses-section,
+    .resources-section {
+        margin-top: 56px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card img {
+        height: 220px;
+    }
+
+    .site-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

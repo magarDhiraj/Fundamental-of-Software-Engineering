@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#fff7ed"/><path d="M450 105c-80 60 70 75 5 135-35 33-10 65 31 75-78 7-145-21-145-80 0-82 124-93 109-130z" fill="#ef4444"/><path d="M535 175c95 27 86 99 15 126 30 15 49 36 48 68-1 54-77 76-150 76-95 0-143-39-128-79 13-33 72-36 111-21-59 9-79 27-60 44 32 28 125 25 164 0 48-31 7-68-45-85 100-23 102-86 45-129z" fill="#111827"/><text x="450" y="455" text-anchor="middle" font-family="Arial" font-size="54" font-weight="700" fill="#b91c1c">JAVA</text>
+</svg>

@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#e8f5e9"/><circle cx="450" cy="250" r="165" fill="#306998"/><path d="M450 95c-90 0-110 35-110 80v42h165v24H330c-48 0-85 28-85 88 0 61 39 76 85 76h50v-31c0-52 45-97 97-97h163V175c0-45-39-80-85-80z" fill="#ffd43b"/><path d="M450 405c90 0 110-35 110-80v-42H395v-24h175c48 0 85-28 85-88 0-61-39-76-85-76h-50v31c0 52-45 97-97 97H260v102c0 45 39 80 85 80z" fill="#3776ab" opacity=".9"/><text x="450" y="475" text-anchor="middle" font-family="Arial" font-size="48" font-weight="700" fill="#182230">PYTHON</text>
+</svg>
