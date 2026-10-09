@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    padding: 48px 5vw;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+.site-shell {
+    width: min(100%, 1160px);
+    min-height: 585px;
+    margin: 0 auto;
+    padding: 0 52px;
+    background: #fdf8f4;
+    border-bottom: 1px solid #8b817b;
+}
+
+.navbar {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav-links a {
+    color: #45413f;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.language {
+    color: #928781;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-button {
+    padding: 10px 17px;
+    border-radius: 24px;
+    background: #111111;
+    box-shadow: 0 8px 18px rgb(31 24 20 / 15%);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 512px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    column-gap: 42px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0 22px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #ad8978;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    max-width: 510px;
+    margin-bottom: 22px;
+    font-size: clamp(38px, 4.2vw, 52px);
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: 0;
+}
+
+.hero h1 span {
+    color: #b77b5c;
+}
+
+.description {
+    max-width: 440px;
+    margin-bottom: 22px;
+    color: #77716d;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.primary-button {
+    padding: 11px 21px;
+    border-radius: 24px;
+    background: #111111;
+    box-shadow: 0 8px 18px rgb(31 24 20 / 15%);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.secondary-button {
+    padding: 10px 20px;
+    border: 1px solid #d3c8c0;
+    border-radius: 24px;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-image {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 31% 38% 34% 30% / 20% 25% 23% 22%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trusted {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 28px;
+    margin-top: auto;
+    padding-top: 48px;
+    color: #b2aaa5;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.trusted-label {
+    margin-right: 8px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    .site-shell {
+        padding: 0 26px;
+    }
+
+    .navbar {
+        min-height: 68px;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 12px 0;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 5px 0 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding: 32px 0 28px;
+    }
+
+    .hero-content {
+        padding: 0;
+    }
+
+    .hero h1 {
+        max-width: 540px;
+        font-size: clamp(38px, 9vw, 52px);
+    }
+
+    .trusted {
+        gap: 16px 22px;
+        padding-top: 36px;
+    }
+
+    .trusted-label {
+        width: 100%;
+    }
+
+    .hero-image {
+        height: min(85vw, 420px);
+    }
+}
+
+@media (max-width: 420px) {
+    .site-shell {
+        padding: 0 20px;
+    }
+
+    .nav-right {
+        gap: 9px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+    }
+}
+
+
+
+
